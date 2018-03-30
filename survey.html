@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<!--
+			New Perspectives on HTML
+			Final Project
+			survey.html
+
+			Dispatch Lyrics Survey Page
+			Author: Nate Hanes
+			Date:   5/7/2015
+
+			Filename:         survey.html
+			Supporting files: survey.css, universal.css 
+		-->
+	  
+		
+		<meta charset="UTF-8" />
+		<link href="stylesheets/universal.css" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/survey.css" rel="stylesheet" type="text/css" />
+		<title>Dispatch Lyrics</title>
+		<link rel="icon" type="image/icon" href="pics/favicon.ico">
+		
+	
+	</head>
+	
+	<body>
+	
+	<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="http://www.dispatchmusic.com/">Band Site</a></li>
+				<li><a href="survey.html">Survey</a></li>
+			</ul>
+			
+	</nav>
+	
+	<header>
+		 <article>
+            <h1>Viewer Survey</h1>
+            <p>Thank you for taking our viewer survey. Your response 
+               helps to better understand the desires
+			   of our viewers.
+            </p>
+            <p> By filling out the information below you will help
+			    us to determine what new content to
+				add to our site to make it better for you!
+            </p>
+            <p> Surveys are private and confidential. Dispatch Lyrics will
+				not share your contact information with anyone.
+            </p>
+         </article>
+	</header>
+	
+	
+	
+<form id="survey" name="survey" action="complete.html" method="get">
+	<fieldset id="viewerinfo">
+		<legend>Viewer Information</legend>
+		
+		<label for="name">Name:</label>
+				<input type="text" name="name" id="name" placeholder="First Name" />
+				
+		<label for="email">E-mail:</label>
+			<input type="email" name="email" id="email" required="required"/>
+		
+		<label for="phone">Phone:</label>
+			<input type="tel" name="phone" id="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" 
+						placeholder="(###) ###-####"/>
+			
+		<label id="gender">Gender:</label>
+				<label id="guy">Male</label>
+				<input type="radio" value="Male" name="gender" id="male" />
+				<label id="gal">Female</label>
+				<input type="radio" value="Female" name="gender" id="female" />
+				
+		<label>Where did you find out about this amazing site!? <br/> 
+			   (select all that apply) </label>
+		   <select name="reference" id="reference"
+					multiple="multiple" size="5">						
+				<option value="Awesome Friend">
+					An awesome friend
+				</option>
+				<option value="Google">
+					A Google search
+				</option>
+				<option value="Concert">
+					Saw Dispatch in concert
+				</option>
+				<option value="Steve">
+					Steve
+				</option>							
+				<option value="Poster">
+					A poster
+				</option>					
+		   </select>
+	</fieldset>
+	
+	<fieldset id="experience">
+		<legend>How was your experience?</legend>
+		
+		<label for="favsong">What is your favorite Dispatch Song?</label>
+			<input type="text" name="favsong" id="favsong" list="songs" />
+			<datalist id="songs">
+				<option>The General</option>
+				<option>Two Coins</option>
+				<option>Bang Bang</option>
+				<option>Bridges</option>
+				<option>Carry You</option>
+				<option>Bats In The Belfry</option>
+			</datalist>
+							
+		<label for="oneword">What is one word you would
+		use to describe this site? (limit 35 characters)</label>
+			<input type="text" name="oneword" id="oneword" maxlength="35" placeholder="Supercalifragilisticexpialidocious" />
+							
+		<label>How would you describe yourself? (Select all that apply)</label>
+		   <select name="person" id="person" multiple="multiple" size="5">						
+				<option value="Fan of Dispatch">
+					A fan of Dispatch
+				</option>
+				<option value="Groupie">
+					A Dispatch Groupie
+				</option>
+				<option value="Goat">
+					A Goat
+				</option>
+				<option value="Alien">
+					An Alien
+				</option>							
+				<option value="Other">
+					Other
+				</option>					
+			</select>
+			
+		<label for="rating">How much do you like our website? <br />
+					   (0= I hate it!; 10=It's amazing!) </label>
+					   <input type="range" min="0" max="10" value="5" name="rating" id="rating" />
+			
+		<label for="suggestions">Please give us any additional suggestions
+			you have to make our website even better!</label>
+				<textarea name="suggestions" id="suggestions" ></textarea>
+	</fieldset>
+	
+		<label id="aliens">
+			<input type="checkbox" name="aliens" id="alien" />
+			I agree to let you sell my E-mail address to aliens.
+		</label>
+				
+		
+							
+			<p>
+				<input id="button1" type="submit" value="Submit" />
+				<input id="button2" type="reset" value="Cancel" />
+			</p>
+	</form>						
+						
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+		
+		<footer>
+			<address> 
+				8001 Route 5 &bull;
+				Westfield, NY &bull;
+				14787 
+			</address>
+		</footer>
+	</body>
+</html>

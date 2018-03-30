@@ -1,0 +1,13 @@
+/*
+   New Perspectives on HTML and CSS
+   Final Project
+
+   Universal Style Sheet
+   Author: Nate Hanes
+   Date:   3/3/2015
+
+   Filename:	print.css
+*/
+@media print{
+#pages, footer, #twitter{ display: none;}
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	
+		<!--
+			New Perspectives on HTML
+			Final Project
+			survey.html
+
+			Dispatch Lyrics Survey Page
+			Author: Nate Hanes
+			Date:   5/7/2015
+
+			Filename:         complete.html
+			Supporting files: survey.css, universal.css 
+		-->
+	  
+		<meta charset="UTF-8" />
+		<link href="stylesheets/universal.css" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/complete.css" rel="stylesheet" type="text/css" />
+		<title>Dispatch Lyrics</title>
+		<link rel="icon" type="image/icon" href="pics/favicon.ico">
+		
+		<script type="text/javascript" >
+		 
+		 var url = window.location.toString();
+		 var data = url.split("?")[1];
+		 var dataList = data.split("&");
+		 
+		 /**
+		  *	This function returns the data from the "get" data posted
+		  *	in the url of the completed webpage. Specify the name of the
+		  *	input field from the completed form.
+		  * @param nameOfField: string representing the name of the field.
+		  */
+		 function getData ( nameOfField )
+		 {
+			 for ( var iter=0; iter<dataList.length; iter++ )
+			 {
+				var element = dataList[iter].split("=");
+				if ( element[0] == nameOfField )
+				{
+					var word = element[1];
+					while ( word.indexOf ("+" ) > 0 )
+						word = word.replace("+", " ");
+					return unescape( word );
+				}
+			 }
+			 return "";		 
+		 }
+
+		  /**
+		   *	This function returns the browser back to the form page.
+		   * 	Please note: none of the previously entered data is
+		   *	is the form using this function.
+		   */
+		 function returnToForm ( )
+		 {
+			 window.location.href = "survey.htm";
+		 }
+
+		 
+	  </script>
+		
+	</head>
+	
+	<body>
+	
+	<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				
+				<li><a href="survey.html">Survey</a></li>
+			</ul>
+			
+	</nav>
+	
+	<header>
+		 <article>
+            <h1>Viewer Survey</h1>
+            <p>Thank you for taking our viewer survey. Your response 
+               helps to better understand the desires
+			   of our viewers.
+            </p>
+            <p> By filling out the information below you will help
+			    us to determine what new content to
+				add to our site to make it better for you!
+            </p>
+            <p> Surveys are private and confidential. Dispatch Lyrics will
+				not share your contact information with anyone.
+            </p>
+         </article>
+	</header>
+	
+	
+	
+<form id="survey" name="survey" action="survey.html" method="get">
+	<fieldset id="viewerinfo">
+		<legend>Viewer Information</legend>
+		
+		<h4>Name:</h4>
+				<p><script>document.write(getData("name"));</script></p>
+				
+		<h4>E-mail:</h4>
+			<p><script>document.write(getData("email"));</script></p>
+		
+		<h4>Phone:</h4>
+			<p><script>document.write(getData("phone"));</script></p>
+			
+		<h4>Gender:</h4>
+				<p><script>document.write(getData("gender"));</script></p>
+				
+		<h4>Where did you find out about this amazing site!? <br/> 
+			   (select all that apply) </h4>
+		  <p><script>document.write(getData("reference"));</script></p>
+	</fieldset>
+	
+	<fieldset id="experience">
+		<legend>How was your experience?</legend>
+		
+		<h4>What is your favorite Dispatch Song?</h4>
+			<p><script>document.write(getData("favsong"));</script></p>
+							
+		<h4>What is one word you would
+		use to describe this site? (limit 35 characters)</h4>
+			<p><script>document.write(getData("oneword"));</script></p>
+							
+		<h4>How would you describe yourself? (Select all that apply)</h4>
+		   <p><script>document.write(getData("person"));</script></p>
+			
+		<h4>How much do you like our website? <br />
+					   (0= I hate it!; 10=It's amazing!) </h4>
+					  <p><script>document.write(getData("rating"));</script></p>
+			
+		<h4>Please give us any additional suggestions
+			you have to make our website even better!</h4>
+				<p><script>document.write(getData("suggestions"));</script></p>
+	</fieldset>
+	
+		<label id="aliens">
+			<input type="checkbox" name="aliens" id="alien" />
+			I agree to let you sell my E-mail address to aliens.
+		</label>
+				
+		
+							
+			<p>
+				<input id="button1" type="submit" value="Submit" />
+				<input id="button2" type="reset" value="Cancel" />
+			</p>
+		</form>
+			<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+		
+		<footer>
+			<address> 
+				8001 Route 5 &bull;
+				Westfield, NY &bull;
+				14787 
+			</address>
+		</footer>			
+						
+	
+	</body>

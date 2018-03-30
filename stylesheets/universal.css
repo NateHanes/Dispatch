@@ -1,0 +1,41 @@
+/*
+   New Perspectives on HTML and CSS
+   Final Project
+
+   Universal Style Sheet
+   Author: Nate Hanes
+   Date:   3/3/2015
+
+   Filename:	universal.css
+*/
+
+header {
+	position: relative;
+	text-align: center;
+	font-size: 24pt; 
+	padding: 0px;
+	margin: 0px;
+	}
+	
+
+
+body {
+	background-image: url("../pics/background.jpg");
+	font-family: Verdana, Geneva, sans-serif;
+	 }
+
+
+a:hover{
+	color: RGB(255,0,0);
+	text-decoration: underline;}
+
+a:visited{
+	color: RGB(255,0,0);}
+	
+footer{ 
+	text-align: center;
+	color: white;
+	font-size: 14pt;
+	background-color: black;}
+
+	

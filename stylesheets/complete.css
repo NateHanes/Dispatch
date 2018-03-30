@@ -1,0 +1,99 @@
+/*
+   Final Project
+
+   Author: Nate Hanes
+   
+   Filename: survey.css
+
+*/
+#viewerinfo p {
+	color: green;}
+	
+h4 {color: white;}
+	
+#experience p {	
+	color: green;}
+h1{
+	font-size: 30pt;}
+header {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	}
+	
+nav a{
+	text-decoration: none;
+	font-size: 18pt;
+	}
+	
+nav{
+	width: 10%;
+	height: 150px;
+	display: inline;
+	position: relative;
+	top: 0px;
+	line-height: 40px;
+	float: left;
+	}
+
+nav li {
+	vertical-align: center;
+	list-style-type: none;}
+	
+article { 
+	text-align: center;
+	font-size: 14pt;
+	
+	}
+	
+#viewerinfo {
+	display: inline;
+	width: 48%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;}
+	
+legend {
+	text-align: center;
+	color: RGB(221,124,28);}
+	 
+	 
+label {display: block;
+	color: white;}
+
+
+#male {display: inline;}
+#female {display: inline;}
+
+#experience {
+	width: 48%;
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	
+	
+	}
+
+#button1{
+	width: 10%;
+	position: relative;
+	left: 40%;}
+#button2{
+	width: 10%;
+	position: relative;
+	left: 40%;}
+	
+#oneword { width: 220px}
+
+#aliens { 
+	text-align: center;
+	background-color: black;}
+
+input:focus:valid {
+   background: rgb(220, 255, 220)}
+   
+input:focus:invalid {
+   background: rgb(255, 232, 233)}
+	

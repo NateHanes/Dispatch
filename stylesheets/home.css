@@ -1,0 +1,58 @@
+/*
+   New Perspectives on HTML and CSS
+   Final Project
+
+   Universal Style Sheet
+   Author: Nate Hanes
+   Date:   3/3/2015
+
+   Filename:	survey.css
+*/
+h1{
+	color: #8D3625; }
+
+audio { background-color: red;}
+	
+
+article{
+	text-align: center;
+
+	}
+article p {
+	font-size: 14pt;}
+article h2{
+	font-size: 31pt;}
+	
+ul { list-style-type: none;}
+
+	
+
+#pages{
+	background-color: black;
+	padding-right: 40px;
+	width: 150px;}
+	
+#pages li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	text-align: center;
+	
+	}
+
+#pages a{ 
+	text-decoration: none;
+	font-size: 18pt;
+	}
+	
+#songs{
+	text-align: center;
+	list-style-type: none;
+	font-size: 20px;
+	font-weight: bold;
+	}
+	
+#songs a{
+	text-decoration: none;
+	line-height: 35px;}
+
