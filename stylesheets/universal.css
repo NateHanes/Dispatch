@@ -21,13 +21,13 @@ header {
 
 body {
 	background-image: url("../pics/background.jpg");
-	opacity: 0.5;
+	opacity: 0.3;
 	font-family: Verdana, Geneva, sans-serif;
 	 }
 
 
 a:hover{
-	color: RGB(255,0,50);
+	color: RGB(255,0,200);
 	text-decoration: underline;}
 
 a:visited{
